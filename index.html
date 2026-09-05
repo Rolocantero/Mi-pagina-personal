@@ -199,58 +199,6 @@
             margin-top: 30px;
         }
 
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 22px;
-            margin-top: 20px;
-        }
-
-        .work-card {
-            background: linear-gradient(180deg, rgba(12, 19, 31, 0.9), rgba(13, 22, 34, 0.8));
-            border: 1px solid var(--line);
-            border-radius: 22px;
-            overflow: hidden;
-            box-shadow: 0 20px 30px rgba(2, 6, 23, 0.25);
-        }
-
-        .work-visual {
-            height: 160px;
-            display: grid;
-            place-items: center;
-            font-size: 2.2rem;
-            background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(124, 58, 237, 0.22));
-            border-bottom: 1px solid var(--line);
-        }
-
-        .work-content {
-            padding: 22px 20px 20px;
-        }
-
-        .work-content h3 {
-            margin: 0 0 8px;
-            font-size: 1.28rem;
-        }
-
-        .work-content p {
-            margin: 0;
-            color: var(--muted);
-            line-height: 1.7;
-        }
-
-        .tag {
-            display: inline-block;
-            margin-bottom: 10px;
-            padding: 0.35rem 0.65rem;
-            border-radius: 999px;
-            background: rgba(34, 211, 238, 0.08);
-            border: 1px solid rgba(34, 211, 238, 0.2);
-            color: var(--secondary);
-            font-size: 0.72rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-        }
-
         .stat strong {
             display: block;
             font-size: 1.6rem;
@@ -376,6 +324,60 @@
             margin-top: 18px;
         }
 
+        .samples-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+            margin-top: 18px;
+        }
+
+        .sample-card {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            padding: 22px;
+            min-height: 240px;
+        }
+
+        .sample-badge {
+            display: inline-block;
+            margin-bottom: 14px;
+            padding: 0.42rem 0.7rem;
+            border-radius: 999px;
+            background: rgba(34, 211, 238, 0.08);
+            border: 1px solid rgba(34, 211, 238, 0.2);
+            color: var(--secondary);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        .sample-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.5rem;
+        }
+
+        .sample-card p {
+            margin: 0 0 16px;
+            color: var(--muted);
+        }
+
+        .sample-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 8px;
+            color: var(--text);
+            font-size: 0.92rem;
+        }
+
+        .sample-list li::before {
+            content: "•";
+            color: var(--secondary);
+            margin-right: 8px;
+        }
+
         .feature-card {
             position: relative;
             overflow: hidden;
@@ -491,40 +493,6 @@
             </div>
         </section>
 
-        <section id="trabajos">
-            <div class="container">
-                <h2 class="section-title">Trabajos destacados</h2>
-                <div class="work-grid">
-                    <article class="work-card">
-                        <div class="work-visual">💅</div>
-                        <div class="work-content">
-                            <span class="tag">Manicuría</span>
-                            <h3>Beauty Studio</h3>
-                            <p>Desarrollo de sistema de agenda, control de clientes, recordatorios y gestión de servicios para un salón de uñas y belleza.</p>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-visual">☕</div>
-                        <div class="work-content">
-                            <span class="tag">Cafetería</span>
-                            <h3>Espacio Café</h3>
-                            <p>Implementación de menú digital, control de ventas, pedidos rápidos y automatización de procesos para una cafetería moderna.</p>
-                        </div>
-                    </article>
-
-                    <article class="work-card">
-                        <div class="work-visual">📦</div>
-                        <div class="work-content">
-                            <span class="tag">Distribuidora</span>
-                            <h3>Logística Móvil</h3>
-                            <p>Creación de sistema para inventario, control de stock, ventas, facturación y seguimiento de entregas en una distribuidora.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <section id="about">
             <div class="container about-grid">
                 <div class="content-box">
@@ -569,6 +537,46 @@
                         <div class="icon">📹</div>
                         <h3>CCTV e instalación</h3>
                         <p>Instalación, configuración y soporte de cámaras de seguridad para reforzar la vigilancia tecnológica de los negocios.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="trabajos">
+            <div class="container">
+                <h2 class="section-title">Trabajos y muestras</h2>
+                <div class="samples-grid">
+                    <article class="sample-card">
+                        <span class="sample-badge">Manicuría</span>
+                        <h3>Beauty Studio</h3>
+                        <p>Automatización de agendamiento, control de ventas y mejor experiencia del cliente.</p>
+                        <ul class="sample-list">
+                            <li>Agenda inteligente</li>
+                            <li>Control de turnos</li>
+                            <li>Promociones y recordatorios</li>
+                        </ul>
+                    </article>
+
+                    <article class="sample-card">
+                        <span class="sample-badge">Cafetería</span>
+                        <h3>Espacio Gourmet</h3>
+                        <p>Sistema para gestionar pedidos, inventario y atención rápida con mejor organización.</p>
+                        <ul class="sample-list">
+                            <li>Pedidos directos</li>
+                            <li>Inventario de insumos</li>
+                            <li>Control de ventas diarias</li>
+                        </ul>
+                    </article>
+
+                    <article class="sample-card">
+                        <span class="sample-badge">Distribuidora</span>
+                        <h3>Logística & Stock</h3>
+                        <p>Solución para administrar productos, stock, entregas y facturación de manera eficiente.</p>
+                        <ul class="sample-list">
+                            <li>Gestión de stock</li>
+                            <li>Reportes de ventas</li>
+                            <li>Seguimiento de entregas</li>
+                        </ul>
                     </article>
                 </div>
             </div>
