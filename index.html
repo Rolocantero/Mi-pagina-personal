@@ -6,14 +6,14 @@
     <title>MajokeliSystem | Tecnología e Innovación</title>
     <style>
         :root {
-            --bg: #07111f;
-            --bg-alt: #0e1f31;
-            --panel: rgba(17, 24, 39, 0.8);
+            --bg: #050b14;
+            --bg-alt: #0b1726;
+            --panel: rgba(11, 23, 38, 0.82);
             --text: #edf5ff;
-            --muted: #b9c8dc;
-            --primary: #7c3aed;
-            --secondary: #22d3ee;
-            --accent: #38bdf8;
+            --muted: #aabbd0;
+            --primary: #8b5cf6;
+            --secondary: #2dd4bf;
+            --accent: #67e8f9;
             --line: rgba(148, 163, 184, 0.18);
         }
 
@@ -22,9 +22,9 @@
         body {
             margin: 0;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle at top left, rgba(124, 58, 237, 0.25), transparent 30%),
-                        radial-gradient(circle at bottom right, rgba(34, 211, 238, 0.18), transparent 25%),
-                        var(--bg);
+            background: radial-gradient(circle at 8% 0%, rgba(45, 212, 191, 0.16), transparent 26%),
+                        radial-gradient(circle at 92% 42%, rgba(139, 92, 246, 0.16), transparent 28%),
+                        linear-gradient(145deg, var(--bg), var(--bg-alt));
             color: var(--text);
             line-height: 1.6;
         }
@@ -101,18 +101,25 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 0.92rem 1.45rem;
-            border-radius: 999px;
+            padding: 0.95rem 1.5rem;
+            border-radius: 12px;
             border: 1px solid rgba(34, 211, 238, 0.35);
             background: linear-gradient(135deg, rgba(34, 211, 238, 0.12), rgba(124, 58, 237, 0.18));
             font-weight: 600;
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
         }
 
-        .btn:hover { transform: translateY(-2px); }
+        .btn:hover {
+            transform: translateY(-2px);
+            border-color: rgba(103, 232, 249, 0.7);
+            box-shadow: 0 12px 25px rgba(45, 212, 191, 0.12);
+        }
 
         .hero {
-            padding: 90px 0 60px;
+            padding: 110px 0 72px;
+            min-height: 72vh;
+            display: grid;
+            align-items: center;
         }
 
         .hero-grid {
@@ -144,7 +151,7 @@
 
         .gradient-text {
             display: block;
-            background: linear-gradient(135deg, var(--secondary), #8b5cf6);
+            background: linear-gradient(135deg, var(--accent), var(--secondary) 45%, #a78bfa);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -180,10 +187,14 @@
             margin-top: 28px;
         }
 
+        .hero-actions .btn-secondary {
+            border-color: rgba(167, 139, 250, 0.35);
+        }
+
         .btn-primary {
             background: linear-gradient(135deg, var(--secondary), var(--primary));
             border: none;
-            box-shadow: 0 18px 30px rgba(124, 58, 237, 0.25);
+            box-shadow: 0 18px 30px rgba(139, 92, 246, 0.25);
             color: white;
         }
 
@@ -308,8 +319,9 @@
         .contact-box {
             background: var(--panel);
             border: 1px solid var(--line);
-            border-radius: 22px;
+            border-radius: 16px;
             padding: 26px;
+            box-shadow: 0 18px 35px rgba(2, 6, 23, 0.2);
         }
 
         .content-box p {
@@ -487,6 +499,79 @@
             font-size: 1.5rem;
         }
 
+        .lead-wrap {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 24px;
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 26px;
+            box-shadow: 0 20px 30px rgba(2, 6, 23, 0.35);
+        }
+
+        .lead-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .lead-copy small {
+            color: var(--secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-weight: 700;
+        }
+
+        .lead-copy h2 {
+            margin: 12px 0 10px;
+            font-size: clamp(2rem, 3vw, 2.8rem);
+            letter-spacing: -0.04em;
+        }
+
+        .lead-copy p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.02rem;
+        }
+
+        .lead-form {
+            display: grid;
+            gap: 16px;
+        }
+
+        .field {
+            display: grid;
+            gap: 8px;
+        }
+
+        .field label {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .field input,
+        .field textarea {
+            width: 100%;
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            border-radius: 14px;
+            background: rgba(15, 23, 42, 0.9);
+            color: var(--text);
+            padding: 0.9rem 1rem;
+            font: inherit;
+            resize: vertical;
+        }
+
+        .field input:focus,
+        .field textarea:focus {
+            outline: 2px solid rgba(34, 211, 238, 0.35);
+            border-color: rgba(34, 211, 238, 0.4);
+        }
+
+        .field textarea {
+            min-height: 110px;
+        }
+
         footer {
             border-top: 1px solid var(--line);
             padding: 22px 0 40px;
@@ -501,7 +586,8 @@
             .skills-grid,
             .why-grid,
             .samples-grid,
-            .contact { grid-template-columns: 1fr; }
+            .contact,
+            .lead-wrap { grid-template-columns: 1fr; }
             .hero { padding-top: 62px; }
             .btn { width: 100%; }
         }
@@ -521,7 +607,8 @@
                         Técnico en informática con enfoque en la creación de sistemas con IA, automatización, seguridad y soluciones tecnológicas para empresas. Especializado en sistemas a medida, instalación de CCTV y desarrollo moderno orientado a la eficiencia y el crecimiento.
                     </p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="https://wa.me/54973448931" target="_blank" rel="noopener">WhatsApp</a>
+                        <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
+                        <a class="btn btn-secondary" href="https://wa.me/54973448931" target="_blank" rel="noopener">Hablar por WhatsApp</a>
                     </div>
                     <div class="stats">
                         <div class="stat">
@@ -656,13 +743,42 @@
         </section>
 
         <section id="contacto">
+            <div class="container" style="margin-bottom: 24px;">
+                <div class="lead-wrap">
+                    <div class="lead-copy">
+                        <small>Consulta rápida</small>
+                        <h2>Cuéntanos sobre tu negocio</h2>
+                        <p>Queremos saber qué tipo de empresa tienes, qué necesitas y qué objetivo quieres lograr para darte la solución más adecuada.</p>
+                    </div>
+
+                    <form class="lead-form" id="leadForm">
+                        <div class="field">
+                            <label for="tipoEmpresa">Tipo de empresa</label>
+                            <input id="tipoEmpresa" name="tipoEmpresa" type="text" placeholder="Ej: salón de belleza, cafetería, distribuidora" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="necesidad">¿Qué deseas que te hagamos?</label>
+                            <textarea id="necesidad" name="necesidad" placeholder="Ej: una página web, sistema de ventas, automatización, control de stock, agenda digital..." required></textarea>
+                        </div>
+
+                        <div class="field">
+                            <label for="objetivo">¿Qué necesita para que sea funcional?</label>
+                            <textarea id="objetivo" name="objetivo" placeholder="Ej: gestión de clientes, control de ventas, seguridad, automatización de pedidos, organización del negocio..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+
             <div class="container contact">
                 <div class="contact-box">
                     <small>Contacto</small>
                     <strong>¿Necesitas tecnología para tu empresa?</strong>
                     <span>MajokeliSystem ofrece soluciones en IA, automatización, sistemas y CCTV para negocios de distintos tamaños.</span>
                 </div>
-                <a class="btn btn-primary" href="https://wa.me/0973448931" target="_blank" rel="noopener">Chatear por WhatsApp</a>
+                <a class="btn btn-primary" href="https://wa.me/54973448931" target="_blank" rel="noopener">Solicitar presupuesto</a>
             </div>
         </section>
     </main>
@@ -672,5 +788,28 @@
     </footer>
 
     <a class="floating-whatsapp" href="https://wa.me/0973448931" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+
+    <script>
+        const leadForm = document.getElementById('leadForm');
+
+        if (leadForm) {
+            leadForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const tipoEmpresa = document.getElementById('tipoEmpresa').value.trim();
+                const necesidad = document.getElementById('necesidad').value.trim();
+                const objetivo = document.getElementById('objetivo').value.trim();
+
+                const message = encodeURIComponent(
+                    'Hola Jorge, quiero una consulta para mi negocio.\n\n' +
+                    'Tipo de empresa: ' + tipoEmpresa + '\n\n' +
+                    'Qué deseo que me hagas: ' + necesidad + '\n\n' +
+                    'Qué necesita para que sea funcional: ' + objetivo
+                );
+
+                window.open('https://wa.me/54973448931?text=' + message, '_blank');
+            });
+        }
+    </script>
 </body>
 </html>
