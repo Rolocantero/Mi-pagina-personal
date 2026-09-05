@@ -499,79 +499,6 @@
             font-size: 1.5rem;
         }
 
-        .lead-wrap {
-            display: grid;
-            grid-template-columns: 0.9fr 1.1fr;
-            gap: 24px;
-            background: linear-gradient(180deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
-            border: 1px solid var(--line);
-            border-radius: 18px;
-            padding: 26px;
-            box-shadow: 0 20px 30px rgba(2, 6, 23, 0.35);
-        }
-
-        .lead-copy {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .lead-copy small {
-            color: var(--secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            font-weight: 700;
-        }
-
-        .lead-copy h2 {
-            margin: 12px 0 10px;
-            font-size: clamp(2rem, 3vw, 2.8rem);
-            letter-spacing: -0.04em;
-        }
-
-        .lead-copy p {
-            margin: 0;
-            color: var(--muted);
-            font-size: 1.02rem;
-        }
-
-        .lead-form {
-            display: grid;
-            gap: 16px;
-        }
-
-        .field {
-            display: grid;
-            gap: 8px;
-        }
-
-        .field label {
-            font-weight: 600;
-            color: var(--text);
-        }
-
-        .field input,
-        .field textarea {
-            width: 100%;
-            border: 1px solid rgba(148, 163, 184, 0.18);
-            border-radius: 14px;
-            background: rgba(15, 23, 42, 0.9);
-            color: var(--text);
-            padding: 0.9rem 1rem;
-            font: inherit;
-            resize: vertical;
-        }
-
-        .field input:focus,
-        .field textarea:focus {
-            outline: 2px solid rgba(34, 211, 238, 0.35);
-            border-color: rgba(34, 211, 238, 0.4);
-        }
-
-        .field textarea {
-            min-height: 110px;
-        }
-
         footer {
             border-top: 1px solid var(--line);
             padding: 22px 0 40px;
@@ -586,8 +513,7 @@
             .skills-grid,
             .why-grid,
             .samples-grid,
-            .contact,
-            .lead-wrap { grid-template-columns: 1fr; }
+            .contact { grid-template-columns: 1fr; }
             .hero { padding-top: 62px; }
             .btn { width: 100%; }
         }
@@ -598,17 +524,17 @@
         <section class="hero" id="inicio">
             <div class="container hero-grid">
                 <div>
-                    <span class="eyebrow">MajokeliSystem • Tecnología • Innovación</span>
+                    <span class="eyebrow">Jorge Cantero • Tecnología • Innovación</span>
                     <h1>
-                        <span class="gradient-text">MajokeliSystem</span>
+                        <span class="gradient-text">Jorge Cantero</span>
                     </h1>
-                    <p class="subheading">Hola, soy <span class="name-highlight">Jorge Cantero</span></p>
+                    <p class="subheading">Hola, soy <span class="name-highlight">técnico en informática</span></p>
                     <p class="hero-copy">
-                        Técnico en informática con enfoque en la creación de sistemas con IA, automatización, seguridad y soluciones tecnológicas para empresas. Especializado en sistemas a medida, instalación de CCTV y desarrollo moderno orientado a la eficiencia y el crecimiento.
+                        Soy estudiante de 4.º año de la carrera de Análisis de Sistemas. Me interesa crear soluciones con inteligencia artificial, automatización, desarrollo de sistemas y tecnología aplicada a problemas reales.
                     </p>
                     <div class="hero-actions">
-                        <a class="btn btn-primary" href="#contacto">Solicitar presupuesto</a>
-                        <a class="btn btn-secondary" href="https://wa.me/54973448931" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+                        <a class="btn btn-primary" href="#sobre-mi">Conocer mi perfil</a>
+                        <a class="btn btn-secondary" href="https://wa.me/54973448931" target="_blank" rel="noopener">Contactarme</a>
                     </div>
                     <div class="stats">
                         <div class="stat">
@@ -629,7 +555,7 @@
             </div>
         </section>
 
-        <section id="about">
+        <section id="sobre-mi">
             <div class="container about-grid">
                 <div class="content-box">
                     <h2 class="section-title">¿Quién soy?</h2>
@@ -637,17 +563,17 @@
                         Soy Jorge Cantero, técnico en informática con enfoque en la creación de sistemas basados en inteligencia artificial, automatización y tecnología aplicada a la gestión empresarial. Me apasiona diseñar soluciones prácticas, innovadoras y escalables para cada tipo de negocio.
                     </p>
                     <p>
-                        En MajokeliSystem me enfoco en ayudar a empresas a optimizar procesos, fortalecer su infraestructura tecnológica y crear sistemas que respondan exactamente a sus necesidades reales.
+                        Actualmente desarrollo mis conocimientos a través de proyectos personales y académicos, buscando crecer como profesional y transformar ideas en soluciones funcionales.
                     </p>
                 </div>
 
                 <div class="content-box">
                     <h2 class="section-title">Mi enfoque</h2>
                     <p>
-                        Desarrollo sistemas según el enfoque y tamaño de cada empresa, combinando análisis, innovación y automatización para crear soluciones que aporten valor real al negocio.
+                        Mi enfoque combina análisis, creatividad y aprendizaje constante para entender cada problema y pensar soluciones claras, útiles y fáciles de usar.
                     </p>
                     <p>
-                        Mi trabajo también abarca la instalación y configuración de CCTV, infraestructura tecnológica y sistemas inteligentes que mejoren la seguridad, la productividad y la gestión.
+                        También me interesan la automatización, la inteligencia artificial, la infraestructura tecnológica y la seguridad mediante sistemas CCTV.
                     </p>
                 </div>
             </div>
@@ -678,33 +604,33 @@
             </div>
         </section>
 
-        <section id="porque">
+        <section id="enfoque">
             <div class="container">
-                <h2 class="section-title">¿Por qué elegir MajokeliSystem?</h2>
+                <h2 class="section-title">Lo que me define</h2>
                 <div class="why-grid">
                     <article class="why-card">
-                        <strong>Soluciones a medida</strong>
-                        <span>Adaptamos cada sistema al tamaño, enfoque y necesidades de tu negocio.</span>
+                        <strong>Curiosidad</strong>
+                        <span>Me gusta aprender nuevas herramientas y entender cómo funcionan.</span>
                     </article>
                     <article class="why-card">
-                        <strong>IA y automatización</strong>
-                        <span>Mejoramos procesos repetitivos y potenciamos productividad con tecnología inteligente.</span>
+                        <strong>Creatividad</strong>
+                        <span>Busco distintas formas de convertir una idea en una solución.</span>
                     </article>
                     <article class="why-card">
-                        <strong>Seguridad tecnológica</strong>
-                        <span>Instalación y configuración de CCTV para fortalecer la vigilancia y protección.</span>
+                        <strong>Responsabilidad</strong>
+                        <span>Me comprometo con cada proyecto y con seguir mejorando su resultado.</span>
                     </article>
                     <article class="why-card">
-                        <strong>Enfoque práctico</strong>
-                        <span>Soluciones funcionales, modernas y pensadas para aportar valor real a tu empresa.</span>
+                        <strong>Aprendizaje</strong>
+                        <span>La carrera y los proyectos me impulsan a crecer continuamente.</span>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="trabajos">
+        <section id="proyectos">
             <div class="container">
-                <h2 class="section-title">Trabajos y muestras</h2>
+            <h2 class="section-title">Proyectos e intereses</h2>
                 <div class="samples-grid">
                     <article class="sample-card">
                         <span class="sample-badge">Manicuría</span>
@@ -743,42 +669,13 @@
         </section>
 
         <section id="contacto">
-            <div class="container" style="margin-bottom: 24px;">
-                <div class="lead-wrap">
-                    <div class="lead-copy">
-                        <small>Consulta rápida</small>
-                        <h2>Cuéntanos sobre tu negocio</h2>
-                        <p>Queremos saber qué tipo de empresa tienes, qué necesitas y qué objetivo quieres lograr para darte la solución más adecuada.</p>
-                    </div>
-
-                    <form class="lead-form" id="leadForm">
-                        <div class="field">
-                            <label for="tipoEmpresa">Tipo de empresa</label>
-                            <input id="tipoEmpresa" name="tipoEmpresa" type="text" placeholder="Ej: salón de belleza, cafetería, distribuidora" required>
-                        </div>
-
-                        <div class="field">
-                            <label for="necesidad">¿Qué deseas que te hagamos?</label>
-                            <textarea id="necesidad" name="necesidad" placeholder="Ej: una página web, sistema de ventas, automatización, control de stock, agenda digital..." required></textarea>
-                        </div>
-
-                        <div class="field">
-                            <label for="objetivo">¿Qué necesita para que sea funcional?</label>
-                            <textarea id="objetivo" name="objetivo" placeholder="Ej: gestión de clientes, control de ventas, seguridad, automatización de pedidos, organización del negocio..." required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
-                    </form>
-                </div>
-            </div>
-
             <div class="container contact">
                 <div class="contact-box">
                     <small>Contacto</small>
-                    <strong>¿Necesitas tecnología para tu empresa?</strong>
-                    <span>MajokeliSystem ofrece soluciones en IA, automatización, sistemas y CCTV para negocios de distintos tamaños.</span>
+                    <strong>¿Quieres conocer más sobre mi trabajo?</strong>
+                    <span>Puedes escribirme para conversar sobre tecnología, proyectos, ideas o posibilidades de colaboración.</span>
                 </div>
-                <a class="btn btn-primary" href="https://wa.me/54973448931" target="_blank" rel="noopener">Solicitar presupuesto</a>
+                <a class="btn btn-primary" href="https://wa.me/54973448931" target="_blank" rel="noopener">Escribirme por WhatsApp</a>
             </div>
         </section>
     </main>
@@ -789,27 +686,5 @@
 
     <a class="floating-whatsapp" href="https://wa.me/0973448931" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
 
-    <script>
-        const leadForm = document.getElementById('leadForm');
-
-        if (leadForm) {
-            leadForm.addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                const tipoEmpresa = document.getElementById('tipoEmpresa').value.trim();
-                const necesidad = document.getElementById('necesidad').value.trim();
-                const objetivo = document.getElementById('objetivo').value.trim();
-
-                const message = encodeURIComponent(
-                    'Hola Jorge, quiero una consulta para mi negocio.\n\n' +
-                    'Tipo de empresa: ' + tipoEmpresa + '\n\n' +
-                    'Qué deseo que me hagas: ' + necesidad + '\n\n' +
-                    'Qué necesita para que sea funcional: ' + objetivo
-                );
-
-                window.open('https://wa.me/54973448931?text=' + message, '_blank');
-            });
-        }
-    </script>
 </body>
 </html>
